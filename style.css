@@ -1,0 +1,79 @@
+body{
+    background-image: linear-gradient(
+        to right,
+        rgb(30,0,40),
+        black,
+        rgb(0,0,20)
+    );
+    color: white;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    display: inline;
+}
+
+
+#inp{
+    margin-top: 20%;
+    display: block;
+    text-align: center;
+    height: 80px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,200,200,0.01);
+    border-radius: 5%;
+    border: 2px solid black;
+    transition: 0.2s;
+    color: white;
+}
+
+#inp:focus{
+    border: 5px solid black;
+    border-radius: 0%;
+    transition: 0.1s;
+}
+
+#inp:hover{
+    border-radius: 0%;
+}
+
+#vars{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+#stuff{
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgba(180,180,180,0.1);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    border-radius: 3%;
+}
+@keyframes rot {
+    0%{
+        rotate: 25deg;
+    }
+    25%{
+        rotate: -25deg;
+    }
+    50%{
+        rotate: 25deg;
+    }
+    75%{
+        rotate: -25deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+h1{
+    animation: rot 0.8s linear 1;
+}
